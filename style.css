@@ -62,6 +62,7 @@ body {
  padding-top: 5%;
 }
 
+
 .promo-title {
 
  font-size: 40px;
@@ -70,7 +71,7 @@ body {
 }
 
 .info-btn {
- width: 60px;
+ width: 100px;
  margin: 20px;
 }
 
@@ -169,6 +170,11 @@ text-transform: uppercase;
   margin-left: 20px;
  }
 
+ .img-fluid{
+ margin-top: 8%;
+
+ }
+
  /*---------testimonials-----*/
 
  #testimonials {
@@ -256,6 +262,7 @@ color: #fff;
  border-radius: 10px;
  margin-top: 10px;
  max-width: 250px;
+ text-align: center;
 }
 
 .footer-box .btn-primary {
@@ -270,6 +277,12 @@ color: #fff;
  background-image: linear-gradient(to right, #543396 0%,  #2b53d7 51%, #a6c1ee 100%);
 }
 
+.contact-box{
+ text-align: center;
+}
+
+
+
 hr {
  background-color: #fff;
 
@@ -282,5 +295,32 @@ hr {
  text-align: center;
 }
 
+@media screen and (max-width: 768px){
+.promo-title {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 2rem;
+  
+ }
+ h6{
+  text-align: center;
+  padding: 20px;
+ }
+ .info-btn{
 
+  display: flex;
+  margin: 10px auto;
+ }
 
+ p{
+  text-align: center;
+ }
+ #footer .footer-box {
+  text-align: center;
+ 
+ }
+ .footer-box .form-control{
+  display: flex;
+  margin: 10px auto;
+ } 
+ }
