@@ -14,7 +14,7 @@
 
 <body>
 
-  <section id="nav-bar">
+  <header id="nav-bar">
     <nav class="navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -41,7 +41,7 @@
         </ul>
       </div>
     </nav>
-  </section>
+  </header>
 
   <!------------BAnner------------>
 
@@ -51,7 +51,11 @@
         <div class="col-md-6">
           <p class="promo-title">HARDWARE &amp SOFTWARE SUPPORT</p>
           <p>Web Design and IT Services</p>
-          <a href="#footer"> <img src="images/information.png" class="info-btn" alt="">For More Contact Us</a>
+          <a href="#footer"> <img src="images/information.png" class="info-btn" alt=""></a>
+          <a href="#footer">
+            <h6>For More
+              Contact Us</h6>
+          </a>
         </div>
         <div class="col-md-6 text center">
           <img src="images/development.png" alt="" class="img-fluid">
@@ -71,31 +75,25 @@
           <img src="images/web1.png" alt="" class="services-img">
           <h4>Software and Hardware Solutions!</h4>
           <p>
-            Setup Antivirus Programmes
+            Setup Antivirus Programmes,
 
-            PC Formating
+            PC Formating,
+            PC checks and repairs,
 
-            IT Support</p>
+            IT Support..</p>
 
         </div>
         <div class="col-md-4 services">
           <img src="images/web2.png" alt="" class="services-img">
-          <h4>Software Support HTML, CSS, Javascript, Python,</h4>
-          <p>Setup Antivirus Programmes
-
-            PC Formating
-
+          <h4>HTML, CSS, Javascript, Python...</h4>
+          <p>Mek-it povides all sort of web development services and programing languages especially base on Python.
           </p>
 
         </div>
         <div class="col-md-4 services">
           <img src="images/web3.png" alt="" class="services-img">
-          <h4>IT Support!</h4>
-          <p> Software Support in Programme C, Python, Java.
-
-            Setup Antivirus Programmes
-
-            PC Formating
+          <h4>IT and Software Support!</h4>
+          <p> IT and software solutions, covering all types of hardware and software supports.
 
           </p>
 
@@ -178,22 +176,22 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4 footer-box">
-          <img src="images/logo.png" alt="">
+          <a href="#top"><img src="images/logo.png" alt=""></a>
           <p>Software and Hardware Solutions!<br>
             Software Support in Programme C, Python, Java. <br>
             Setup Antivirus Programmes <br>
             PC Formating <br>
             IT Support</p>
         </div>
-        <div class="col-md-4 footer-box">
+        <div class="col-md-4 footer-box contact-box">
           <p><b>CONTACT US</b></p>
           <p><i class="fa fa-map-signs"></i> London-UK</p>
           <p><i class="fa fa-envelope"></i> info@mekit.co.uk</p>
           <p><i class="fa fa-clock-o"></i> Mon - Fri 9am - 5pm</p>
           <p><i class="fa fa-phone"></i> +447469187008</p>
         </div>
-        <div class="col-md-4 footer-box">
-          <p><b>Write Us</b></p>
+        <div class="col-md-4 footer-box form-box">
+          <p><b>Anything You Would Like to Ask?</b></p>
           <input type="text" class="form-control" placeholder="Your Name">
           <input type="tel" class="form-control" placeholder="Your Phone Number">
           <input type="email" class="form-control" placeholder="Your Email">
@@ -206,6 +204,7 @@
     </div>
   </section>
 
+
   <!-- Smooth scrool -->
 
   <script src="smooth-scroll.js"></script>
@@ -213,6 +212,11 @@
     var scroll = new SmoothScroll('a[href*="#"]');
   </script>
 
+  <script>
+    $('.navbar-collapse a').click(function () {
+      $(".navbar-collapse").collapse('hide');
+    });
+  </script>
 </body>
 
 </html>
